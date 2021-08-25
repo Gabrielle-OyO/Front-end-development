@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+    function calcSum(num1,num2)
+    {
+        var sum=num1+num2;
+        console.log(sum);
+        return;
+    }
+
+    var sum=calcSum(2,7);
+    console.log(sum);
+    
+        var hobby="吃饭";
+		function show(){
+			var hobby="睡觉";
+			console.log("局部变量："+hobby);
+			console.log("全局变量："+window.hobby);
+			console.log("全局变量："+this.hobby);
+		}
+		show();
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

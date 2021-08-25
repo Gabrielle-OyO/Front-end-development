@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    function doAdd(){
+        var li=document.createElement("li");
+        var txt=document.createTextNode("itany4");
+        li.appendChild(txt);
+        li.setAttribute("id","fourth");
+        var ul=document.getElementById("myul");
+        ul.appendChild(li);
+    }
+    
+    
+    </script>
+</head>
+<body>
+	<input type="button" value="添加一行" onclick="doAdd()">	
+	<input type="button" value="为表格添加一行" onclick="doAdd2()">	
+	<input type="button" value="获取元素" onclick="doElement()">	
+	<input type="button" value="在元素内部根据标签名查找" onclick="doLi()">	
+	<ul id="myul">
+		<li id="first">itany1</li>
+		<li>itany2</li>
+		<li>itany3</li>
+	</ul>
+    <br>
+    <br>
+    <table id="myTable" width="400px" border="1px">
+        <thead id="th">
+            <tr id="mytr" name="itany"><th id="first">th1</th>
+                <th id="second">th2</th>
+                <th id="hello">th3</th>
+                <th>th4</th>
+                <th>th5</th>
+            
+            </tr>
+        </thead>
+    </table>
+    <ul id="myul2">
+        <li id="first">hello1</li>
+        <li>hello2</li>
+    </ul>
+
+
+
+    
+</body>
+</html>

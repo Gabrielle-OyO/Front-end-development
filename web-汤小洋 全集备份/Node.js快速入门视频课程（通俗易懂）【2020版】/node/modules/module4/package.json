@@ -1,0 +1,11 @@
+{
+    "main":"hello.js",
+    "name":"module4",
+    "version":"v1.0.1",
+    "description": "第四个模块",
+    "scripts":{
+        "test":"echo my_module4"
+    },
+    "author":"汤小洋",
+    "license": "ISC"
+}

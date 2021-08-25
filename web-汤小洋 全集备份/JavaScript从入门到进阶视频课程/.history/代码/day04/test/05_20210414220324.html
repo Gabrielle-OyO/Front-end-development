@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    
+    console.log(Math.random())
+    var x=parseInt(Math.random()*100+" ");
+    console.log(x);
+    
+    var a=pareInt(Math.random()*99+1);
+    console.log(a);
+    var b;
+    for(i=1;i<=5;i++){
+        b=Number(prompt("请输入一个数字"));
+        if(b>a){
+            alert("大了，使用了"+i+"次机会");
+        }else if(b<a){
+            alert("小了，使用了"+i+"次机会");
+        }else{
+            alert("恭喜对了，一共使用"+i+"次机会.正确数字为："+a);
+            break;
+        }
+    }
+    if(i>5){
+        alert("超过次数未未猜中");
+    }
+
+
+
+    
+    
+    </script>
+
+
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>

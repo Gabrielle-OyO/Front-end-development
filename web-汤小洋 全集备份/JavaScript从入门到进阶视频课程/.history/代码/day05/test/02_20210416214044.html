@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    var names=["ton","sssssd","efeww","wqwe"];
+    console.log("排序前："+names);
+    names.sort();
+    console.log("排序后："+names);
+
+    var nums=[13,52,72,8,3,14,84];
+    console.log(nums);
+    nums.sort();
+    nums.sort(itany);
+    console.log(nums);
+
+    function itany(a,b)
+    {
+        if(a>b)
+        {
+            return -1;
+        }else if(a<b)
+        {
+            return 1;
+        }else
+        {
+            return 0;
+        }
+    }
+
+    console.log()
+    names.reverse();
+    console.log(names);
+
+    var str=names.join();
+    var str=names.join("_");
+    console.log(str);
+
+    var hobbies=["eeee","aaaa","weer","ooooo"];
+    var array=nums.concat(names,hobbies);
+    console.log(array);
+
+    console.log(nums);
+    var n=nums[nums.length-1];
+    var n=nums.pop();
+    console.log(n);
+    console.log(nums);
+
+    nums.push(6666666);
+    console.log(nums);
+    nums.push(2222,00000);
+    console.log(nums);
+    
+    nums.unshift(44444444);
+    console.log(nums);
+
+    var n=nums.shift();
+    console.log(n);
+    console.log(nums);
+
+    var nums2=nums.slice(1,4);
+    console.log(nums2);
+    var nums2=nums.slice(1);
+    console.log(nums);
+
+    console.log(names);
+    var str=names.toString();
+    console.log(str);
+
+    console.log(names.valueOf());
+    console.log(names);
+
+    names.forEach(function(value.index){
+        console.log(index+"="+value);
+        });
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

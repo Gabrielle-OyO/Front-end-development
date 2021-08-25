@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    console.log(window.screen);
+    var s=window.screen;
+    console.log("屏幕"+s.width+"*"+s.height);
+    console.log("屏幕"+window.screen.width+"*"+window.screen.height);
+    console.log("屏幕"+screen.width+"*"+screen.height);
+
+    function doAlert(){
+        alert("这是window对象的alter方法");
+    }
+
+    function doPrompt(){
+        var name=window.prompt("输入名字:");
+        if(name==null){
+            console.log("用户取消了输入操作!");
+        }else{
+            console.log(name);
+        }
+    }
+
+    function doConfirm(){
+        var flag=confirm("您确定要关闭吗?");
+        if(flag){
+            console.log("好，那关闭吧");
+        }else{
+            console.log("那别关了");
+        }
+    }
+
+
+
+
+
+
+
+
+
+    
+    </script>
+</head>
+<body>
+	<input type="button" value="测试alert" onclick="doAlert()" />
+	<input type="button" value="测试prompt" onclick="doPrompt()" />
+	<input type="button" value="测试confirm" onclick="doConfirm()" />
+
+    
+</body>
+</html>

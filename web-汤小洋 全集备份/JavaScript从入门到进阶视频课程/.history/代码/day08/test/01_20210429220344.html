@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    window.online=function(){
+        var obj=document.getElementById("baidu");
+        console.log(obj);
+        console.log(obj.href);
+        console.log(obj.target);
+        obj.href="http://www.qq.com";
+    }
+    
+    </script>
+</head>
+<body>
+    <input type="radio" name="search" id="baidu" checked="check" onclick="doChange()"/>
+    <label for="baidu">百度</label>
+    <input type="radio" name="search" id="google" onclick="doChange()"/>
+    <label for="google">谷歌</label>
+    <input type="radio" name="search" id="bing" onclick="doChange()"/>
+    <label for="bing">必应</label>
+    <br>
+    <form id="myFrm" action="http://www.baidu.com/s">
+    <img src="images/baidu.png" style="width:70px;height:40px;" id="logo"/>
+    <input type="text" name="wd" id="txtSearch" placeholder="请输入关键字">
+    <input type="submit" value="百度搜索" id="btnSearch">
+    </form>
+
+
+</body>
+</html>
