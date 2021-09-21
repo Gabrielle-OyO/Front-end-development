@@ -1,2 +1,0 @@
-trainItemDao=com.itany.dao.impl.TrainItemDaoImpl
-courseDao=com.itany.dao.impl.CourseDaoImpl
